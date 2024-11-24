@@ -1,0 +1,33 @@
+.aboutInfo, .ourStory p {
+    font-size: 20px;
+    text-align: justify;
+}
+.aboutInfo, .ourStory {
+    margin-top: 50px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.details {
+    display: flex;
+    align-items: center;
+}
+
+.aboutImgContainer {
+    display: flex;
+    justify-content: right;
+}
+
+.aboutInfo img {
+    width: 500px;
+}
+
+.ourStory {
+    background-color: #fff;
+}
+
+.ourStory h1 {
+    grid-column: span 2;
+    margin-bottom: 50px;
+}

@@ -3,10 +3,22 @@ body {
     margin: 0;
     padding: 0;
     background-color: #F8F9FB;
+
+    font-family: "Merriweather Sans", sans-serif;
+
+    color: #171717;
 }
 
 h1,h2,h3 {
     margin: 0;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+p {
+    font-weight: 100;
 }
 
 a {
@@ -40,6 +52,7 @@ a {
 .primary {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 20px;
 }
 
 
@@ -51,26 +64,68 @@ a {
     gap: 50px;
 }
 
-.primaryLeftSide h1{
-    font-size: 40px;
-}
-
 .primaryLeftSide .description{
     font-size: 20px;
 }
 
-.primaryLeftSide .imageContainer {
-    display: flex;
-    justify-content: center;
-} 
+
 
 .primaryLeftSide button {
     padding: 20px;
 
     border: none;
     border-radius: 10px;
+    border: 1px solid #fff;
 
     background-color: #824ACA;
+    color: #fff;
+}
+
+.primaryLeftSide button:hover {
+    border: 1px solid #824ACA;
+    background-color: #fff;
+    color: #824ACA;
+}
+
+.primaryLeftSide button:active {
+    border: 1px solid #fff;
+    background-color: #824ACA;
+    color: #fff;
+}
+
+.primaryleftHighlights {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.highlightsCard {
+    padding: 10px;
+
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.highlightsCard .imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlightsCard h3 {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.imgContainer img{
+    max-width: 75px;
+}
+
+.highlightsCardDescription {
+    grid-column: span 2;
 }
 
 
@@ -85,7 +140,7 @@ a {
 }
 
 .productCard {
-
+    padding: 10px;
     margin-top: 50px;
 
     display: flex;
@@ -94,25 +149,100 @@ a {
 }
 
 .productCardImg {
-    max-width: 50px;
     justify-content: center;
 }
 
 .productCardImg img {
-    width: 100%;
+    max-width: 50px;
 }
 
 .productCardDetails {
     margin-left: 20px;
 }
 
+.productCardDetails p {
+    font-size: 14px;
+}
+
+/* Section Two */
+
+.sectionTwo {
+    margin: 50px 0;
+    padding: 50px;
+    background-color: #FFE700;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.verticalLineContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.verticalLine {
+    width: 0px;
+    height: 100%;
+    border: 1px dashed #171717;
+    border-radius: 10px;
+}
+
+.tagLineContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Section Three */
+.sectionThree {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    align-items: center;
+}
+
+.sectionThree .info {
+    display: grid;
+    gap : 20px
+}
+
+.sectionThree .imgContainer {
+    display: flex;
+    justify-content: right;    
+}
+
+.sectionThree .imgContainer img {
+    max-width: 500px;
+}
+
+
+/* Section Four */
+.sectionFour {
+    margin-top: 50px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sectionFour img {
+    max-width: 500px;
+}
+
+.sectionFour .info {
+    display: grid;
+}
+
 
 /* Footer */
 .footer {
+    margin-top: 50px;
     /* padding: 0 50px; */
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 2fr 1fr 1fr 1fr;
 }
 
 .footerLogoContainer {
@@ -121,4 +251,10 @@ a {
 
 .footerLogoContainer img {
     width: 100%;
+}
+
+/* Background Colours */
+
+.bgE7F3F8 {
+    background-color: #E7F3F8;
 }
