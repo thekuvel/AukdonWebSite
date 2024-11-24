@@ -15,17 +15,17 @@ productsData = [
     {
         img:"./assets/productsIcon/billKraftIcon.png",
         title:"billkraft",
-        description:"Application to book playground, participate and create tournaments."
+        description:"Application to manage sales, generate bills for customer and track inventory."
     },
     {
         img:"./assets/productsIcon/clientopiaIcon.png",
         title:"clientopia",
-        description:"Application to book playground, participate and create tournaments."
+        description:"Software Suit to manage contacts, sales, support tickets, tasks, approvals, feedback and more."
     },
     {
         img:"./assets/productsIcon/ticketdaIcon.png",
         title:"ticketsda",
-        description:"Application to book playground, participate and create tournaments."
+        description:"Ticket booking app."
     }
 ]
 
