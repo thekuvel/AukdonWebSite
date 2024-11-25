@@ -9,7 +9,7 @@ body {
     color: #171717;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4 {
     margin: 0;
 }
 
@@ -42,11 +42,51 @@ a {
     background-color: #fff;
 }
 
+.companyName {
+    font-size: 36px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+}
+
+.header h4 {
+    font-size: 20px;
+    font-weight:300;
+}
+
+.companyDropDown {
+    position: relative;
+}
+
+.companyDropDown:hover {
+    cursor: pointer;
+}
+
+.companyDropDown .name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.companyDropDown .name img{
+    width: 22px;
+}
+
+.companyDropDown .list{
+    margin-top: 10px;
+    padding: 10px;
+    line-height: 40px;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.1);
+}
 
 /* Main Container */
 .mainContainer {
     padding-top: 50px;
     padding-bottom: 50px;
+
+    min-height: 100vh;
 }
 
 .primary {
@@ -100,7 +140,7 @@ a {
 }
 
 .highlightsCard {
-    padding: 10px;
+    padding: 30px 10px;
 
     border-radius: 10px;
 
