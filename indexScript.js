@@ -96,3 +96,7 @@ highlightsData.map((data) => {
 
     primaryleftHighlights.append(highlightsCard);
 })
+
+function handleStartFree(){
+    window.location.href = "./pages/contact/contact.html"
+}
