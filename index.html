@@ -3,67 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/icons/TamilNady_Map_Icon.png">
     <title>Aukdon</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#F8F9FB] mx-10 my-5">
+<body class="bg-[#F8F9FB] sm:mx-20 my-5 text-center sm:text-left">
 
     <!-- Container -->
-    <div class="gap-y-4 grid min-h-dvh grid-rows-[1fr_auto] sm:grid-rows-[auto_1fr_auto]">
+    <div class="gap-y-4 grid min-h-dvh grid-rows-[1fr_auto] sm:grid-rows-[1fr_auto] relative pt-20">
         
         <!-- Header -->
-        <div class="hidden sm:block sm:grid bg-white p-4 grid-cols-12 gap-5 sm:rounded-lg sm:drop-shadow-md">
+        <div class="hidden sm:block sm:grid bg-white p-4 grid-cols-12 gap-5 sm:rounded-lg sm:drop-shadow-md absolute left-0 right-0 z-10">
             <div class="col-span-1 flex justify-center item">
-                <img class="max-w-[32px]" src="/assets/TamilNady_Map_Icon.png">
+                <img class="max-w-[32px]" src="/assets/icons/TamilNady_Map_Icon.png">
             </div>
             <div class="col-span-11 flex gap-10 items-center">
-                <a href="/">Home</a>
-                <a href="#">Products</a>
-                <a href="#">About</a>
+                <a class="hover:text-blue-500" href="/">Home</a>
+                <a class="hover:text-blue-500" href="#">Products</a>
+                <a id="companyDropDown" class="hover:text-blue-500" href="#">Company</a>
+            </div>
+            <div class="hidden col-span-12 companyDropDownList grid grid-cols-2 gap-5">
+                <div class="bg-[#E7F3F8] p-5 rounded-lg">
+                    <a class="hover:text-blue-500" href="#">About</a>
+                    <p class="text-black/75">Know about us</p>
+                </div>
+                <div class="bg-[#fbf3db] p-5 rounded-lg">
+                    <a class="hover:text-blue-500" href="#">Founder</a>
+                    <p class="text-black/75">Kumaravel</p>
+                </div>
+                <div class="bg-[#EDF3EC] p-5 rounded-lg">
+                    <a class="hover:text-blue-500" href="#">Careers</a>
+                    <p class="text-black/75">Join us!</p>
+                </div>
             </div>
         </div>
         
         <!-- Main Content -->
-        <div class="p-10">
+        <div class="grid gap-10">
 
             <!-- First Section -->
-            <div class="grid sm:grid-cols-12">
-                <div class="col-span-8">
-                    <h1 class="text-[48px]">aukdon</h1>
-                    <h2 class="text-[32px]">Minimal | Scalable | Reliable</h2>
-                    <p class="text-black/75">
-                        Unique cloud based software solution that prioritize minimal design
-                        and focus on reliability to ensures an intuitive user experience.
-                        Our scalable architecture adapts to your growing needs.
-                    </p>
-                </div>
-    
-                <div class=" grid gap-10 col-span-4 bg-white p-10">
+            <div class="grid sm:grid-cols-12 gap-y-10">
 
-                    <a href="#">
+                <!-- Intro section - LEFT side -->
+                <div class="col-span-8">
+                    <!-- <h1 class="text-[48px]">aukdon</h1> -->
+                    <h1 class="text-[48px] font-['Fredoka']">Minimal Reliable Scalable</h1>
+                    <p class="text-black/75">
+                        Tailored cloud based software solution that is minimal, reliable and scalable.
+                    </p>
+                    <button class="bg-[#7678ED] p-4 rounded-lg mt-5 text-white hover:bg-white hover:text-[#7678ED] border hover:border-[#7678ED]">Get started for free!</button>
+                </div>
+                
+                <!-- List of products - RIGHT side -->
+                <div class=" grid gap-10 col-span-4 bg-white p-10 sm:drop-shadow sm:rounded-lg">
+
+                    <a href="#" class="sm:hover:-translate-y-1 sm:duration-150">
                         <div>
-                            <h3 class="text-[20px]">edinport</h3>
-                            <p>A cloud app that links education institutions, students and employers. </p>
+                            <h3 class="text-[20px] font-['Fredoka']">edinport</h3>
+                            <p class="text-black/75">A cloud app that links education institutions, students and employers. </p>
                         </div>
                     </a>
-                   
-                    <a href="#">
-                        <div>
-                            <h3 class="text-[20px]">Game Of Domination</h3>
-                            <p>Application to book playground, participate and create tournaments.</p>
-                        </div>
-                   </a>
+
+                   <a href="#" class="sm:hover:-translate-y-1 sm:duration-150">
+                    <div>
+                        <h3 class="text-[20px] font-['Fredoka']">Game Of Domination</h3>
+                        <p class="text-black/75">Application to book playground, participate and create tournaments. </p>
+                    </div>
+                </a>
 
                 </div>
             </div>
-            
+            <!-- ******************** -->
 
+            <!-- Section two -->
+             <div class="p-20 grid sm:grid-cols-12 bg-[#FFE700] drop-shadow text-justify">
+                <div class="sm:col-span-5">
+                    <h2 class="text-[32px] text-center sm:text-left font-['Fredoka']">aukdon</h2>
+                    <p>We provide uniquely customised solution for all business type and size.</p>
+                    <br>
+                    <p>
+                        We understand that each business have unique requirements and needs.
+                        Your business may not need all the features of a pre-built application
+                        and may need custom built solution for your specific use case and client base.
+                        And that is where we get in the picture.
+                    </p>                    
+                </div>
+                <div class="sm:col-span-2 flex justify-center">
+                    <div class="sm:border sm:border-[#000] sm:max-w-[1px] sm:h-full sm:border-dashed"></div>
+                </div>
+                <div class="sm:col-span-5 flex items-center justify-center">
+                    <p class="text-[32px] text-center">Your business operating system</p>
+                </div>
+             </div>
+            
         </div>
         
-        <div class="block sm:hidden">Mobile Menu</div>
-        <div class="hidden sm:block">Footer</div>
+
+        <!-- Mobile Menu -->
+        <div class="block sm:hidden bg-white rounded-lg p-5 drop-shadow-md">
+            <div class="grid grid-cols-3">
+                <p><a class="hover:text-blue-500" href="/">Founder</a></p>
+                <p><a class="hover:text-blue-500" href="">Home</a></p>
+                <p><a class="hover:text-blue-500" href="">Products</a></p>
+            </div>
+        </div>
+        
+        <!-- Footer Section -->
+        <div class="hidden sm:block p-10 sm:grid grid-cols-12 bg-white rounded-lg">
+            <div class="col-span-6">
+                <div class="flex gap-5 items-center">
+                    <img class="max-w-[32px]" src="/assets/icons/TamilNady_Map_Icon.png">
+                    <p class="font-['Fredoka']">aukdon</p>
+                </div>
+                <p class="mt-5">Contact : team.aukdon@gmail.com</p>
+            </div>
+            <div class="col-span-6 text-right grid grid-cols-2">
+                <div>
+                    <p><a class="hover:text-blue-500" href="">About</a></p>
+                    <p><a class="hover:text-blue-500" href="">Founder</a></p>
+                    <p><a class="hover:text-blue-500" href="">Careers</a></p>                    
+                </div>
+                <div>
+                    <p><a class="hover:text-blue-500" href="">Products</a></p>
+                    <p><a class="hover:text-blue-500" href="">Services</a></p>
+                </div>
+            </div>
+            <div class="col-span-12 text-center text-black/75 mt-10">
+                © 2024 aukdon
+            </div>
+        </div>
     </div>
     
+    <script src="/script.js"></script>
+
 </body>
 </html>
