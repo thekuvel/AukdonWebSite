@@ -1,30 +1,26 @@
-.founderSecondary {
-    margin-top: 50px;
-    padding: 50px;
 
-    background-color: #fff;
+@keyframes slideLoop {
+    from {
+        transform: translatex(0);
+    }
+    to {
+        transform: translatex(-100%);
+    }
 }
 
-.founderSecondary h3{
-    text-align: center;
-    font-weight: 300;
+.sliderContainer{
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.founderSocialMedia {
-    margin: 50px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.sliderContainer:hover .slider {
+    animation-play-state: paused;
 }
 
-.socialLink {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
+.slider {    
+    animation: 25s slideLoop infinite linear;
 }
 
-.socialLink img{
-    height: 30px;
-    width: 30px;
+.slider a{
+    margin: 0 50px;
 }

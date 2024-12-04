@@ -1,14 +1,12 @@
 
-// Header
-
-let companyDropDown = document.querySelector(".companyDropDown");
-let companyDropDownList = document.querySelector(".companyDropDown .list");
-companyDropDownList.style.display = "none";
-
-companyDropDown.addEventListener("click", () => {
-    if(companyDropDownList.style.display == "none"){
-        companyDropDownList.style.display = "block";
+let companyDropDown = document.querySelector("#companyDropDown");
+let companyDropDownList = document.querySelector(".companyDropDownList");
+companyDropDown.addEventListener("click", ()=>{
+    
+    if(companyDropDownList.classList.contains("hidden")){
+        companyDropDownList.classList.replace("hidden", "block")
     }else{
-        companyDropDownList.style.display = "none";
+        companyDropDownList.classList.replace("block", "hidden")
     }
+
 })

@@ -3,88 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../../assets/TamilNady_Map_Icon.png">
-    <title>about</title>
-    <link rel="stylesheet" href="../../styles.css">
-    <link rel="stylesheet" href="./products.css">
-    <!-- Google Font -->
+    <link rel="icon" href="/assets/icons/TamilNady_Map_Icon.png">
+    <title>Aukdon</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 </head>
-<body>
 
-    <!-- Header -->
-    <header class="header paddingSide100">
-        <h1 class="companyName"><a href="/">aukdon</a></h1>
-        <h4><a href="../../pages/products/products.html">Products</a></h4>
-        <!-- <h4><a href="#">Services</a></h4> -->
-        <div class="companyDropDown">
-            <div class="name">
-                <h4>Company</h4>
-                <img src="../../assets/icons/dropDown.png">
-            </div>
-            <div class="list">
-                <h4><a href="../../pages/about.html">About</a></h4>
-                <h4><a href="../../pages/founder/founder.html">Founder</a></h4>
-                <h4><a href="../../pages/careers/careers.html">Career</a></h4>
-            </div>
-        </div>
-        <h4><a href="../contact/contact.html">Contact</a></h4>
-    </header>
+<body class=" max-w-[100dvw] bg-[#F8F9FB] sm:mx-20 my-5 text-center sm:text-left">
 
-
-    <!-- Main Content -->
-    <div class="mainContainer paddingSide100">
-        <section class="productsPrimarySection">
-            <div class="productsContainer">
-                <!-- <div class="highlightsCard">
-                    <div class="imgContainer">
-                        <img src="../../assets/productsIcon/edinPortIcon.png" alt="Dedicated Support">
-                    </div>
-                    <h3>Didicated support</h3>
-                    <p class="highlightsCardDescription">With all our paid plans you get deticated support. A team of skillful developers and specialist will be assigned to your profile.</p>
-                </div> -->
-            </div>
-        </section>
+    <div>
+        <a href="/">&lt-- Back to home</a>
     </div>
 
-
-
-    <!-- Footer -->
-    <footer class="footer paddingSide100">
+    <div>
         
+        <!-- First section - Intro -->
         <div>
-            <div class="footerLogoContainer">
-                <img src="../../assets/Logo_With_Icon.png" alt="aukdon icon">
+            <h1 class="font-['Fredoka'] text-[48px]">Products</h1>
+            <p>Aukdon list of saas products.</p>
+        </div>
+
+        <div class="my-10 sm:grid grid-cols-2 gap-10">
+            <div class="border p-5 bg-[#fff]">
+                <img class="max-w-[64px] m-auto sm:m-0" src="https://cdn-icons-png.flaticon.com/512/8385/8385643.png" >
+                <h3 class="text-[20px]">edinport</h3>
+                <p>A cloud app that links education institutions, students and employers.</p>
             </div>
-            <p>From Greater Tamil Nadu</p>
-            <p>©️ 2024 Aukdon. All rights reserved.</p>
+            <div class="border p-5 bg-[#fff]">
+                <img class="max-w-[64px] m-auto sm:m-0" src="https://cdn-icons-png.flaticon.com/512/9385/9385681.png" >
+                <h3 class="text-[20px]">Game Of Domination</h3>
+                <p>Application to book playground, participate and create tournaments.</p>
+            </div>
+            <div class="border p-5 bg-[#fff]">
+                <img class="max-w-[64px] m-auto sm:m-0" src="https://cdn-icons-png.flaticon.com/512/9559/9559141.png" >
+                <h3 class="text-[20px]">Careerda</h3>
+                <p>Job board to post jobs and track application.</p>
+            </div>
+            <div class="border p-5 bg-[#fff]">
+                <img class="max-w-[64px] m-auto sm:m-0" src="https://cdn-icons-png.flaticon.com/512/11526/11526449.png" >
+                <h3 class="text-[20px]">Paymentlog</h3>
+                <p>Cloud based application to manage payroll, expence and other finance.</p>
+            </div>
         </div>
 
-        <div>
-            <h3>Company</h3>
-            <a href="../about.html"><p>About</p></a>
-            <a href="../founder/founder.html"><p>Founder</p></a>
-            <a href="../careers/careers.html"><p>Careers</p></a>
-        </div>
+    </div>
 
-        <div>
-            <h3>Products</h3>
-            <a href="../products/products.html"><p>Game Of Domination</p></a>
-            <a href="../products/products.html"><p>edinport</p></a>
-        </div>
-
-        <div>
-            <h3>Services</h3>
-            <p>Application development</p>
-            <p>Web site development</p>
-            <p>Business Setup</p>
-        </div>
-
-    </footer>
-    
-    <script src="../../script.js" type="text/javascript"></script>
-    <script src="./products.js" type="text/javascript"></script>
 </body>
+
 </html>
